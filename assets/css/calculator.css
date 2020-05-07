@@ -1,0 +1,100 @@
+/* flexbox */
+*{
+    box-sizing:border-box;
+    color:white;
+}
+
+body{
+    background-color:black;
+}
+.flex-column{
+    display       : flex;
+    flex-direction: column;
+    width:25%;
+    margin: 10% auto;
+    height: 100%;
+    background-color: black;
+}
+.flex-row{
+    display       : flex;
+    flex-grow     : 1;
+    flex-direction: row;
+    /* umum */
+}
+.infut{
+    background-color: black;
+    color:white;
+    flex-grow: 4;
+    width: 100%;
+    border: none;
+    font-size: 6vw;
+    text-align:right;
+}
+.text-area{
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 3vw;
+    width: 100%;
+}
+.button{
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: #272626;
+    border-radius: 40px;
+    text-align:center;
+    font-size: 2.5vw;
+    width: 80%;
+    padding: 10px;
+    margin:0px auto;
+}
+.abu-abu{
+    background-color: gray;
+    color:black;
+}
+.orange{
+    background-color: orange;
+}
+.satu{
+    flex-basis: 25%;
+    margin: 5px 0px;
+}
+.dua{
+    flex-basis: 50%;
+    margin: 5px 0px;
+}
+.tiga{
+    flex-basis: 75%;
+    margin: 5px 0px;
+}
+.empat{
+    flex-basis: 100%;
+    margin: 5px 0px;
+}
+
+.history{
+    margin: 5px auto;
+    background-color: #272626;
+    box-shadow: -1px 1px #6b6363;
+    width:50%;
+    border-radius: 5px;
+    padding:5px;
+}
+
+.history > h4{
+    color:white;
+}
+.history > table{
+    background-color: orange;
+    width:100%;
+    font-size:1.5vw;
+}
+.history tbody{
+    background-color: #e4af4d;
+}
+#historyList{
+    text-align: center;
+    color:black !important;
+}

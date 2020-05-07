@@ -1,0 +1,291 @@
+/* latihan pertama */
+
+body{
+    margin      :0;
+    font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgrey;
+     background: url('../image/bg.jpg') no-repeat center center fixed;
+                -webkit-background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+                -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+}
+
+@media screen and (max-width:2000px) {
+    header{
+    top:0px;
+    display:flex;
+    position: sticky;
+    background-color:#00a2c6;
+    padding: 20px;
+    max-width: 100%;
+    overflow: auto;
+    height:10%;
+    border-bottom    : 2px solid white;
+    box-shadow: inset 0px -2px 1px 0px #147287;
+    }
+    header > nav{
+        width:70%;
+        height: 100%;
+    }
+    #menu-burger{
+        display: none;
+    }
+    .mobile-nav{
+        display:none;
+    }
+    .judul{
+        font-family: buat-title;
+        color:white;
+        font-size: 1.5vw;
+        text-shadow: -2px 1px black;
+    }
+
+    main{
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        position: static;
+        flex-direction: row;
+    }
+    aside{
+        width     : 100%;
+        flex-basis      : 20%;
+        background-color: aliceblue;
+        box-sizing      : border-box;
+        background-color: #1c8ea7;
+        border-right    : 2px solid white;
+        box-shadow: inset -4px 0px 1px 0px #147287;
+    }
+    aside > p{
+        font-size   : 1vw;
+        color:white;
+        line-height: 15px;
+        padding-right:5%;
+        padding-left:5%;
+        font-family: 'kata kata';
+        font-weight: 10px;
+    }
+    aside > p::first-letter{
+        font-size   : 2vw;
+    }
+    .gambar-profile{
+        margin: 10px 32%;
+        width:30%;
+        height:100px;
+        border-radius: 100px;
+        box-shadow: -4px 0px #077189; 
+    }
+    .sidebar{
+        box-sizing: border-box;
+        display         : flex;
+        flex-direction  : column;
+        width           : 100%;
+        background-color: #2fa2bc;
+        color           : white;
+        font-weight     : 2px;
+        margin-bottom: 100%;
+    }
+
+    .in-sidebar{
+        padding:5%;
+        text-decoration: none;
+        color: white;
+    }
+    .in-sidebar:hover{
+        padding:5%;
+        background-color: #2fb7d6;
+        text-decoration: none;
+        color: white;
+        box-shadow: -3px 1px 4px black;
+    }
+    .aktip{
+        padding:5%;
+        background-color: #2ecbef;
+        box-shadow: -3px 1px 4px black;
+        text-decoration: none;
+        color: white;
+    }
+    .content{
+        height: 100%;
+        flex-basis  : 80%;
+        display:flex;
+        flex-direction: column;
+    }
+    article{
+        flex-basis  : 100%;
+        display:flex;
+        flex-direction: row;
+        height: 380px;
+        box-sizing: border-box;
+    }
+    section{
+        border      : 1px solid black;
+        overflow    : hidden;
+        flex-basis  : 50%;
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        position: static;
+        margin      : 5px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        box-shadow: -2px 2px 6px #150b89;
+    }
+    .content-header{
+        top:0px;
+        padding:5px;
+        height: 50px;
+        width:100%;
+        background-color: #2fa2bc;
+        Color:white;
+        flex-basis: 10%;
+        position: static;
+    }
+    .content-body{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        position: static;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+    .gambar-berita{
+        width : 50%;
+        height: 200px;
+        flex-basis: 80%;
+        margin: 5px 25% 2px 25%;
+        position: static;
+    }
+    .video-berita{
+        width : 100%;
+        height: 100%;
+        flex-basis: 100%;
+        position: static;
+        display: block;
+        margin-top:10px;
+    }
+    .content-body p{
+        flex-basis: 20%;
+        color:black;
+        margin:0;
+        font-variant: small-caps;
+        font-style  : italic;
+        font-size: 1.5vw;
+        text-align  :center;
+        font-family : "Dicoding";
+        /* text-decoration : underline; overline , line-through,none */
+        /* text-transform: lowercase !important; */
+    }
+    .content-body p:hover{
+        color       :black;
+        font-variant: small-caps;
+        flex-basis: 20%;
+        font-weight : bolder ;
+        font-style  : italic;
+        font-family : "Dicoding";
+    }
+    .content-body p::first-letter{
+        font-size   : 2vw;
+    }
+    .content-footer{
+        position: static;
+        bottom:0px;
+        padding:10px;
+        height: 30%;
+        width: 100%;
+        font-size: 1vw;
+        box-sizing: border-box;
+        flex-basis: 15%;
+        background-color: #2fa2bc;
+        Color:white;
+    }
+    .content-footer > input{
+        width:60%;
+    }
+    footer{
+        position: static;
+        background-color:#00a2c6;
+        color           :white;
+        padding         :20px;
+        height          :20%;
+        text-align      :center;
+        bottom          :0px;
+        margin-top      : auto ;
+        font-size:1vw;
+    }
+    .content-footer > button{
+        width:20%;
+        font-size: 2vw;
+    }
+} 
+@media screen and (max-width:620px) {
+    #menu-burger{
+        width: 6%;
+        height: 10%;
+        display: inline;
+        margin-right: 5px;
+    }
+    .mobile-nav{
+        display:none;
+        position: fixed;
+        margin-top: 10%;
+        background-color: white;
+        width:20%;
+        text-shadow: none;
+        font-size: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:5px;
+        list-style-type: none;
+        box-shadow: -3px 2px black;
+    }
+    .mobile-nav > a > li{
+        padding :10px;
+    }
+    .mobile-nav > a{
+        text-decoration: none;
+        color:black;
+    }
+    .judul{
+        font-size :3.5vw;
+    }
+    .gambar-berita{
+        height: 190px;
+    }
+    .content-body > p{
+        font-size: 3vw;
+        margin:0;
+        display:block;
+    }
+    .content-body > p::first-letter{
+        font-size: 4vw;
+    }
+    .content-footer > label{
+        font-size: 2vw;
+        display:block;
+    }
+    .content-footer > input{
+        width:70%;
+    }
+    .content-footer > button{
+        width:25%;
+        height: 60%;
+        font-size: 3vw;
+    }
+    aside{
+        display : none;
+    }
+    footer{
+        bottom:0px;
+        font-size:2vw;
+    }
+    .content{
+        flex-basis:100%;
+    }
+    article{
+        flex-direction: column;
+        height: 700px;
+    }
+}
