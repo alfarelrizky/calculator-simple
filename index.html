@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel='stylesheet' href='assets/css/calculator.css'/>
+</head>
+<body>
+    <div class='flex-column'>
+        <p class='output' style="color:white;"></p>
+        <div class='flex-row'>
+            <div class='text-area empat'><input id='infit' class='infut' value='0' type='text'/></div>
+        </div>
+        <div class='flex-row'>
+            <div class='satu'><button class='button abu-abu'>AC</button></div>
+            <div class='satu'><button class='button abu-abu'>+/-</button></div>
+            <div class='satu'><button class='button abu-abu'>%</button></div>
+            <div class='satu'><button class='button orange'>:</button></div>
+        </div>
+        <div class='flex-row'>
+            <div class='satu'><button class='button'>7</button></div>
+            <div class='satu'><button class='button'>8</button></div>
+            <div class='satu'><button class='button'>9</button></div>
+            <div class='satu'><button class='button orange'>X</button></div>
+        </div>
+        <div class='flex-row'>
+            <div class='satu'><button class='button'>4</button></div>
+            <div class='satu'><button class='button'>5</button></div>
+            <div class='satu'><button class='button'>6</button></div>
+            <div class='satu'><button class='button orange'>-</button></div>
+        </div>
+        <div class='flex-row'>
+            <div class='satu'><button class='button'>1</button></div>
+            <div class='satu'><button class='button'>2</button></div>
+            <div class='satu'><button class='button'>3</button></div>
+            <div class='satu'><button class='button orange'>+</button></div>
+        </div>
+        <div class='flex-row'>
+            <div class='dua'><button class='button'>0</button></div>
+            <div class='satu'><button class='button'>,</button></div>
+            <div class='satu'><button class='button orange'>=</button></div>
+        </div>
+    </div>
+
+    <div id='history' class='history'>
+        <h4>History Calculasi</h4>
+        <table border="2px solid white">
+            <thead>
+                <th>ANGKA 1</th>
+                <th>OPERATOR</th>
+                <th>ANGKA 2</th>
+                <th>HASIL</th>
+            </thead>
+            <tbody id="historyList">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/js/calculator.js"></script>
+    <!-- javascript -->
+</body>
+</html>
